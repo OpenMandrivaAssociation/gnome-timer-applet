@@ -1,6 +1,6 @@
 %define name	gnome-timer-applet
-%define version 1.0
-%define release 1mdk
+%define version 2.0.1
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	Countdown timer applet for the GNOME panel
@@ -12,18 +12,23 @@ URL:		http://timerapplet.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	libpanel-applet-2-devel
+BuildRequires:	python-devel
+Requires:	gnome-python >= 2.16
+Requires:	gnome-python-desktop >= 2.16
+Requires:	python-gnome-glade >= 2.10
+Requires:	python-notify >= 0.1
+Requires:	dbus-python > 0.80
+Requires(post):GConf2
+Requires(preun):GConf2
 
 %description
-    * Add multiple Timer Applets to the panel to have different timer
-      running simultaneously
-    * Quickly set a time and the applet will notify you when time's up
-    * Create presets for quick access to frequently-used times
-    * Small and unobtrusive. Choose to either view the remaining time right
-      in the panel or hide it so you don't get distracted by the countdown.
-      You can still view the remaining time by hovering your mouse over the
-      timer icon
-    * User interface follows the GNOME Human Interface Guidelines
+* Quickly set a timer and be notified when it finishes
+* Unobtrusive notification that does not interrupt your work, but keeps you
+  aware that the timer has finished
+* Create presets for quick access to frequently-used times
+* Add multiple Timer Applets to the panel to have different timers running
+  simultaneously
+* D-Bus support provides programmatic access to Timer Applet instances
 
 %prep
 %setup -q -n timer-applet-%version
@@ -51,8 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS NEWS README
 %{_sysconfdir}/gconf/schemas/*
-%{_bindir}/timer-applet
-%{_libdir}/bonobo/servers/GNOME_TimerApplet.server
-%{_datadir}/gnome/help/timer-applet
-%{_datadir}/gnome-2.0/ui/*
+%{_libdir}/timer-applet/timer-applet
+%{_libdir}/bonobo/servers/*
+%{py_sitedir}/timerapplet
+%{_datadir}/timer-applet
 %{_datadir}/pixmaps/*
