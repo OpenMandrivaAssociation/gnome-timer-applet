@@ -1,6 +1,6 @@
 %define name	gnome-timer-applet
 %define version 2.0.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	Countdown timer applet for the GNOME panel
@@ -13,6 +13,7 @@ License:	GPL
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel
+BuildRequires:	perl-XML-Parser
 Requires:	gnome-python >= 2.16
 Requires:	gnome-python-desktop >= 2.16
 Requires:	python-gnome-glade >= 2.10
