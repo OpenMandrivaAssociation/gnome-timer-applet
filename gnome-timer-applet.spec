@@ -11,7 +11,6 @@ Source:		timer-applet-%{version}.tar.bz2
 URL:		http://timerapplet.sourceforge.net/
 License:	GPL
 Group:		Graphical desktop/GNOME
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel
 BuildRequires:	perl-XML-Parser
 Requires:	gnome-python >= 2.16
