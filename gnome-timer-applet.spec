@@ -1,14 +1,14 @@
 %define name	gnome-timer-applet
-%define version 2.0.1
-%define release %mkrel 8
+%define version 2.1.4
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	Countdown timer applet for the GNOME panel
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		timer-applet-%{version}.tar.bz2
-URL:		http://timerapplet.sourceforge.net/
+Source:		timer-applet-%{version}.tar.gz
+URL:		http://launchpad.net/timer-applet
 License:	GPL
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
