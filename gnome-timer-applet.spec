@@ -32,7 +32,7 @@ Requires(preun):GConf2
 * D-Bus support provides programmatic access to Timer Applet instances
 
 %prep
-%setup -q -n timer-applet-%version
+%setup -q -n timer-applet
 
 %build
 %configure2_5x --disable-schemas-install
