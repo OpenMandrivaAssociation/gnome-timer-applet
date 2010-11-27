@@ -14,6 +14,7 @@ Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel
 BuildRequires:	perl-XML-Parser
+BuildRequires:	intltool >= 0.35
 Requires:	gnome-python >= 2.16
 Requires:	gnome-python-desktop >= 2.16
 Requires:	pygtk2.0-libglade >= 2.10
