@@ -63,3 +63,57 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/timerapplet
 %{_datadir}/timer-applet
 %{_datadir}/pixmaps/*
+
+
+%changelog
+* Sat Nov 27 2010 Olivier Faurax <ofaurax@mandriva.org> 2.1.4-1mdv2011.0
++ Revision: 602033
+- new home, new version
+
+* Sun Nov 07 2010 Jani Välimaa <wally@mandriva.org> 2.0.1-8mdv2011.0
++ Revision: 594852
+- rebuild for python 2.7
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 2.0.1-7mdv2010.0
++ Revision: 437787
+- rebuild
+
+* Tue Jan 06 2009 Funda Wang <fwang@mandriva.org> 2.0.1-6mdv2009.1
++ Revision: 325445
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 2.0.1-5mdv2009.0
++ Revision: 240781
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun May 20 2007 Austin Acton <austin@mandriva.org> 2.0.1-3mdv2008.0
++ Revision: 28953
+- fix requires (bug 30923)
+
+* Sun Apr 29 2007 Austin Acton <austin@mandriva.org> 2.0.1-2mdv2008.0
++ Revision: 19212
+- buildrequires perl-XML-Parser
+- 2.0 python-based version
+- Import gnome-timer-applet
+
+
+
+* Sun Apr 3 2005 Austin Acton <austin@mandrake.org> 1.0-1mdk
+- 1.0
+- schemas
+
+* Sat Mar 05 2005 Austin Acton <austin@mandrake.org> 0.7-1mdk
+- New release 0.7
+
+* Wed Feb 2 2005 Austin Acton <austin@mandrake.org> 0.5.1-1mdk
+- 0.5.1
+
+* Sun Jan 30 2005 Austin Acton <austin@mandrake.org> 0.4-1mdk
+- 0.4
+
+* Wed Jan 19 2005 Austin Acton <austin@mandrake.org> 0.3-1mdk
+- initial package
