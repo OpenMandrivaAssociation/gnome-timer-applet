@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		timer-applet-%{version}.tar.gz
-URL:		http://launchpad.net/timer-applet
+URL:		https://launchpad.net/timer-applet
 License:	GPL
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
