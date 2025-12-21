@@ -12,6 +12,11 @@ URL:		https://launchpad.net/timer-applet
 License:	GPL
 Group:		Graphical desktop/GNOME
 BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	python-devel
 BuildRequires:	perl-XML-Parser
 BuildRequires:	intltool >= 0.35
