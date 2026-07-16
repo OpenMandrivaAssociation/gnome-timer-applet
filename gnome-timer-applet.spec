@@ -1,6 +1,6 @@
 %define name	gnome-timer-applet
 %define version 2.1.4
-%define release %mkrel 1
+%define release 2
 
 Name: 	 	%{name}
 Summary: 	Countdown timer applet for the GNOME panel
